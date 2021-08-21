@@ -60,7 +60,7 @@ The application has a responsive easy to use interface for shop managers and can
 
 `npm run test`
 
-## To Do/Features to expect in the future
+## ToDo List
 
 - [ ] Finish testing
 
