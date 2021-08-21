@@ -1,0 +1,80 @@
+#main-menu{
+    > div:last-child{
+        width: 100%;
+        max-width: 250px;
+    }
+    .MuiDrawer-paper {
+        background-color: #242e3e;
+        color: white;
+        width: 250px;
+    }
+    ul{
+        padding: 0 !important;
+        min-width: 300px;
+    }
+    #connected-user{
+        padding: 10px 20px !important;
+        display: block;
+        background: #FF5C4A;
+        text-align: left;
+        font-style: italic;
+        cursor: default;
+        font-size: 15px;
+        color: white;
+        width: 100%;
+        @include arabsettings();
+        height: 60px;
+    }
+    li{
+        padding : 0 !important;
+        height: auto !important;
+        
+        a{
+            display: block;
+            width: 100%;
+            padding: 15px 40px 15px 20px;
+            font-weight: 400; 
+            font-size: 15px;
+            position: relative;
+            color: #b5bdca;
+            &.selected{
+                color: #fff;
+                background: rgba(0, 0, 0, 0.08);
+                cursor: default;
+            }
+            &:hover {
+                color:white;
+            }
+            
+        }
+        &.logout{
+            border-top: 1px solid #ccc;
+            font-size: 15px;
+            button{
+                font-weight: bold;
+                display: block;
+                width: 100%;
+                padding: 15px 40px 15px 20px;
+                background: none;
+                border: none;
+                color: #b5bdca;
+                text-align: left;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 15px;
+                text-transform: uppercase;
+                @include arabsettings();
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width : 680px){
+}
+
+@media screen and (max-width : 480px){
+}
+
+
+

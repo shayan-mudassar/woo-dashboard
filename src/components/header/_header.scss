@@ -1,0 +1,122 @@
+#header{
+    border-bottom: 1px solid #e7e7e7;
+    height: 60px;
+    background: white;
+    padding: 7px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 11; 
+    #logo{
+        display: inline-block;
+        max-width: 90px;
+        padding: 1px 0;
+        img{
+            width: 100%;
+        }
+    }
+
+    #menu-icon{
+        color: $black;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    #filter-icon{
+        color: $black;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    #category-icon{
+        color: $black;
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+    }
+    
+}
+
+
+#main-menu{
+    > div:last-child{
+        width: 100%;
+        max-width: 250px;
+    }
+    ul{
+        padding: 0 !important;
+        min-width: 250px;
+    }
+    #connected-user{
+        padding: 6px 15px !important;
+        display: block;
+        background: $black;
+        text-align: left;
+        font-style: italic;
+        cursor: default;
+        font-size: 13px;
+        color: white;
+        width: 100%;
+        @include arabsettings();
+    }
+    li{
+        padding : 0 !important;
+        height: auto !important;
+        
+        a{
+            color : $black;
+            display: block;
+            width: 100%;
+            padding: 10px 40px;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+            &.selected{
+                color: $black;
+                background: $primary;
+                cursor: default;
+            }
+            
+        }
+        &.logout{
+            border-top: 1px solid #ccc;
+            font-size: 15px;
+            button{
+                display: block;
+                width: 100%;
+                padding: 12px 40px;
+                background: none;
+                border: none;
+                color: $danger;
+                text-align: left;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 14px;
+                text-transform: uppercase;
+                @include arabsettings();
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 680px){
+    #header {
+        height: 54px;
+        #menu-icon , #search-icon, #category-icon{
+            padding: 6px;
+        }
+    }
+}
+
+@media screen and (max-width : 480px){
+    #header{
+        margin-bottom: 10px;
+    }
+}
+
+
+

@@ -1,0 +1,105 @@
+#add-product-page {
+    .product-form {
+        padding: 15px;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 200px;
+        }
+    }
+
+    .paper-divider {
+        margin: 15px 0 30px;
+    }
+
+}
+
+.product-gallery {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    li {
+        display: block;
+        width: (100 / 3) * 1%;
+        padding: 10px;
+        height: 115px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+
+.product-tag {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.featured-image {
+    width: 200px;
+    height: 200px;
+    margin:0 auto 25px;
+
+}
+
+.Mui-focused fieldset legend{
+    margin-left: 10px;
+}
+
+.default-input {
+    width: 100%;
+    padding:15px; 
+}
+
+.panel-form {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.default-wysiwyg {
+    width: 100%;
+}
+
+.expansion-panel-container {
+    margin-bottom: 30px;
+}
+     label.Mui-focused{
+      color: 'green',
+    } 
+     .MuiInput-underline:after{
+      border-bottom-color: 'green',
+    } 
+     .MuiOutlinedInput-root{
+       fieldset{
+        border-color: 'red',
+      } 
+      :hover fieldset{
+        border-color: 'yellow',
+      } 
+      .Mui-focused fieldset{
+        border-color: 'green',
+      } 
+    } 
+// Common styles
+
+// End Common styles
+
+@keyframes loading{
+    from {
+        transform : translateX(-100%)
+    }
+    to {
+        transform : translateX(100%)
+    }
+}
+
+@media screen and (max-width : 1024px){
+    #products-list .product-item {
+        max-width: 25%;
+    }
+}
+@media screen and (max-width : 680px){
+    #products-list .product-item {
+        max-width: 50%;
+    }
+}

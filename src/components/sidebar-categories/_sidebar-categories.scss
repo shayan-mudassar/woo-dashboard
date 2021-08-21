@@ -1,0 +1,72 @@
+#sidebar-categories{
+    > div:last-child{
+        width: 100%;
+        max-width: 250px;
+    }
+    ul{
+        padding: 0 !important;
+        min-width: 250px;
+    }
+    #sidebar-categories-title {
+        padding: 6px 15px !important;
+        display: block;
+        background: #FF5C4A;
+        cursor: default;
+        font-size: 13px;
+        color: white;
+        width: 100%;
+        font-weight: bold;
+        @include arabsettings();
+        height: 60px;
+        line-height: 40px;
+
+    }
+    li{
+        padding : 0 !important;
+        height: auto !important;
+        
+        a{
+            color : $black;
+            display: block;
+            width: 100%;
+            padding: 5px 40px;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+            &.selected{
+                color: $black;
+                background: $primary;
+                cursor: default;
+            }
+            
+        }
+        &.logout{
+            border-top: 1px solid #ccc;
+            font-size: 15px;
+            button{
+                display: block;
+                width: 100%;
+                padding: 12px 40px;
+                background: none;
+                border: none;
+                color: $danger;
+                text-align: left;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 14px;
+                text-transform: uppercase;
+                @include arabsettings();
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width : 680px){
+}
+
+@media screen and (max-width : 480px){
+}
+
+
+

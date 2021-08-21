@@ -1,0 +1,237 @@
+html{
+    min-height: 100%;
+    background: #f3f4f7;
+}
+
+body{
+    font-family: $font;
+    font-size: 15px;
+    line-height: 1;
+    color: $gray-dark;
+    min-height: 100%;
+    overflow: auto !important; // ENABLE SCROLL WHEN THE DRAWER IS OPEN
+    padding-right: 0 !important; // FIX MATERIAL MENU SHOWEN
+    padding-bottom: 100px;
+    @include font-smoothing();
+    -webkit-overflow-scrolling: touch;
+    &.overflow-hidden{
+        overflow: hidden !important;
+    }
+}
+
+button , input , textarea, select{
+    font-family: $font;
+    font-size: 14px;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#layout{
+    height: 100vh;
+    .MuiPaper-elevation1, .MuiPaper-elevation2 {
+        box-shadow: 0 0.05rem 0.01rem rgba(75,75,90,.075);
+    }
+}
+
+#container{
+    padding-bottom: 20px;
+}
+
+#breadcrumb{
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-family: $font;
+    color: $gray;
+    span{
+        color : #858d92;
+    }
+}
+
+.wrapper{
+    padding: 0 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include clearfix();
+}
+
+.editable-text{
+    display: inline-block;
+    vertical-align: top;
+    > span{
+        cursor: pointer;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 28px;
+        // padding-bottom: 3px;
+        &.empty{
+            color: #bfbfbf;
+        }
+    }
+    input{
+        border: none;
+    }
+    > div > div{
+        &:before{
+            background-color: #ccc;
+        }
+        &:after{
+            background-color: $primary;
+        }
+    }
+    .input{
+        width: 100%;
+        &.hide{
+            display: none;
+        }
+    }
+}
+
+.title-box{
+    border-bottom: 1px solid $border;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .editable-text{
+        
+        font-size: 24px;
+        > span{
+            line-height: 31px;
+        }
+        input{
+            font-size: 23px;
+            min-width: 350px;
+        }
+    }
+}
+
+#snackbar > div{
+    background: #111;
+    padding-right: 50px;
+    #message-id{
+        color : $danger;
+        font-style: italic;
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 8px;
+    }
+}
+
+.rc-pagination{
+    text-align: center;
+    margin: 50px auto 70px; 
+    li{
+        display: inline-block;
+        margin: 0 3px;
+        vertical-align: text-bottom;
+        outline: none !important;
+        a{
+            display: block;
+            padding: 3px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            line-height: 28px;
+            background: white;
+            cursor: pointer;
+            outline: none !important;
+            transition: all .3s;
+        }
+        a:hover {
+            background-color: #dadada;
+        }
+        &.rc-pagination-item-active{
+            a{
+                font-weight: 600;
+                background: #FF5C4A;
+                color: white;
+            }
+        }
+        &.rc-pagination-prev{
+            a{
+                position: relative;
+                &:before{
+                    content : "\2039";
+                    font-size: 22px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    line-height: 31px;
+                    bottom: 0;
+                }
+            }
+        }
+        &.rc-pagination-next{
+            a{
+                position: relative;
+                &:before{
+                    content : "\203A";
+                    font-size: 22px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    line-height: 31px;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.rc-pagination-disabled{
+            
+            a{
+                background: $border;
+                cursor: not-allowed
+            }
+        }
+
+        &.rc-pagination-jump-next, &.rc-pagination-jump-prev{
+            a{
+                position: relative;
+                &:before{
+                    content : "...";
+                    font-size: 22px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    line-height: 23px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.hide-upload-input {
+    display: none;
+}
+
+.editorClassName {
+    border:1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
+    min-height: 150px;
+    max-height: 250px;
+    padding: 0 10px;
+    height: auto;
+}
+
+
+@media screen and (max-width : 959px){
+    #snackbar{
+        top: 0 !important;
+        > div button{
+            right: 0;
+        }
+    }
+}
