@@ -12,6 +12,8 @@ The application has a responsive easy to use interface for shop managers and can
 
 - `npm install`
 
+- `Rename .env.dist to .env`
+
 - Update **.env** file to match your your wordPress URLS
 
 - `REACT_APP_LIVE_STORE_URL=https://example.com`
