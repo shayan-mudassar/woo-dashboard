@@ -50,10 +50,10 @@ const styles = (theme)=> ({
         animationDuration: '550ms'
     },
     linearColorPrimary: {
-        backgroundColor: '#FF5C4A',
+        backgroundColor: '#2e3192',
     },
     linearBarColorPrimary: {
-        backgroundColor: '#242e3e',
+        backgroundColor: '#f5821f',
     }
 });
 
