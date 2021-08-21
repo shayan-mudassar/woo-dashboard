@@ -1,1 +1,9 @@
+- Add comments
+
+- Add a search feature
+
+- WordPress Media Manager
+
 - Testing
+
+- And more...
