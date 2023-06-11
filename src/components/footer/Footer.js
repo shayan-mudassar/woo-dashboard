@@ -4,8 +4,8 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 const Footer = () => {
     return (
         <footer id="main-footer">
-            {/* {(new Date().getFullYear())} © AYSONLINE. All Rights Reserved. Crafted with { <FavoriteBorderIcon /> } By <a href="#"> <strong></strong> </a> */}
-            {(new Date().getFullYear())} © AYSONLINE. All Rights Reserved
+            {/* {(new Date().getFullYear())} © UFIRST. All Rights Reserved. Crafted with { <FavoriteBorderIcon /> } By <a href="#"> <strong></strong> </a> */}
+            {(new Date().getFullYear())} © UFIRST. All Rights Reserved
         </footer>
     )
 };
