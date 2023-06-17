@@ -1,0 +1,8 @@
+{
+  "appId": "com.ufirstenterprises.ufirst",
+  "appName": "ufirst_dasboard",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https"
+  }
+}
