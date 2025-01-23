@@ -1,75 +1,76 @@
-# WooAYS : Woocommerce CRUD SYSTEM
+# WooAYS: WooCommerce CRUD System
 
-WooAYS is a ReactJs application for your WooCommerce store.
-
-The application has a responsive easy to use interface for shop managers and can be used to **Show**, **Add**, **Edit** and **Delete** WooCommerce products.
-
-## Setup
-
-### Install WooAYS App
-
-- `git clone https://github.com/shayan02/woo-dashboard.git`
-
-- `npm install`
-
-- `Rename .env.dist to .env`
-
-- Update **.env** file to match your your wordPress URLS
-
-- `REACT_APP_LIVE_STORE_URL=https://example.com`
-
-- `REACT_APP_LOCAL_STORE_URL=http://LOCAL.test`
-
-> Local environment : REACT_APP_LOCAL_STORE_URL
-
-`npm run start`
-
-> Production environment : REACT_APP_LIVE_STORE_URL
-
-`npm run build`
+WooAYS is a React.js application designed to streamline the management of your WooCommerce store. It offers a responsive and user-friendly interface for shop managers, enabling seamless Create, Read, Update, and Delete (CRUD) operations on WooCommerce products.
 
 ## Features
 
-- Unique WooCommerce dashboard
+- **Product Management**: Easily add, edit, view, and delete products within your WooCommerce store.
+- **Responsive Design**: Optimized for various devices, ensuring a consistent experience across desktops, tablets, and mobile devices.
+- **User-Friendly Interface**: Intuitive design tailored for shop managers to efficiently manage store products.
 
-- See a list of all products
+## Prerequisites
 
-- Add products
+Before setting up WooAYS, ensure you have the following installed:
 
-- Quick update products
+- **Node.js**: JavaScript runtime environment.
+- **npm**: Node package manager, typically installed alongside Node.js.
 
-- Advanced edit for products
+## Installation
 
-- WYSIWYG
+1. **Clone the Repository**:
 
-- Delete products
+   ```bash
+   git clone https://github.com/shayan-mudassar/woo-dashboard.git
+   ```
 
-- Filter products by categories
+2. **Navigate to the Project Directory**:
 
-- Create categories
+   ```bash
+   cd woo-dashboard
+   ```
 
-- Create tags
+3. **Install Dependencies**:
 
-- Up-Sells and Cross-Sells
+   ```bash
+   npm install
+   ```
 
-- Preview live product
+4. **Configure Environment Variables**:
 
-- Easy to use interface
+   - Rename the `.env.dist` file to `.env`.
+   - Open the `.env` file and update the following variables with your WordPress URLs:
 
-- Modern Design
+     ```env
+     REACT_APP_LIVE_STORE_URL=https://your-live-store-url.com
+     REACT_APP_LOCAL_STORE_URL=http://your-local-store-url.test
+     ```
 
-## Testing
+## Running the Application
 
-`npm run test`
+- **Development Mode** (uses `REACT_APP_LOCAL_STORE_URL`):
 
-## ToDo List
+  ```bash
+  npm run start
+  ```
 
-- [ ] Finish testing
+  This command starts the application in development mode, enabling features like hot-reloading for efficient development.
 
-- [ ] Add comments
+- **Production Build** (uses `REACT_APP_LIVE_STORE_URL`):
 
-- [ ] Add a search feature
+  ```bash
+  npm run build
+  ```
 
-- [ ] WordPress Media Manager
+  This command creates an optimized production build of the application, ready for deployment.
 
-- [ ] And more...
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and create a pull request. For major changes, it's advisable to open an issue first to discuss the proposed modifications.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+By following this README, you should be able to set up and run the WooAYS application seamlessly. If you encounter any issues or have questions, feel free to open an issue in the repository. 
